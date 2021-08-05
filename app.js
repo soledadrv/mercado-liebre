@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3040;
 const path = require('path');
-const { allowedNodeEnvironmentFlags } = require('process');
 
 app.use(express.static('public'));
 
