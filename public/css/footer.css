@@ -1,0 +1,39 @@
+footer {
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding-top: 60px;
+}
+
+footer section {
+    margin-bottom: 45px;
+    margin-left: 62px;
+    margin-right: 62px;
+}
+
+footer section div i{
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+footer section h4 {
+    font-size: var(--descuentos-descripciones);
+    color: var(--grisOscuro);
+}
+
+footer section p {
+    font-size: var(--cuerpo);
+    color: var(--grisOscuro);
+}
+
+footer section.copyright {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+footer section.copyright p {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}

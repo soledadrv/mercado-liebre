@@ -1,0 +1,66 @@
+header {
+    background-color: var(--amarillo);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header img.logo {
+    width: 40%;
+    margin: 5px 30px;
+}
+
+header div form input {
+    display: block;
+    width: 45%;
+}
+
+header div form button {
+    display: block;
+}
+
+header div.search {
+    margin: 5px 20px;
+}
+
+header p {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+header nav input{
+    display: none;
+}
+
+header nav label.menu {
+    display: block;
+    width: 48px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--celeste);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+header nav label.menu i {
+    font-size: 26px;
+}
+
+header nav ul {
+    display: none;
+    margin-top: 15px;
+}
+
+header nav input:checked ~ ul{
+    display: block;
+}
+
+header nav ul li {
+    text-align: center;
+}
+
+header nav ul li a {
+    font-size: 14px;
+}
