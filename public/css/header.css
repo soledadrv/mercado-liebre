@@ -28,11 +28,7 @@ header p {
     margin: 10px auto;
 }
 
-header nav input{
-    display: none;
-}
-
-header nav label.menu {
+header div.menu {
     display: block;
     width: 48px;
     margin: auto;
@@ -44,21 +40,13 @@ header nav label.menu {
     border-radius: 6px;
 }
 
-header nav label.menu i {
+header div.menu i {
     font-size: 26px;
 }
 
 header nav ul {
-    display: none;
-    margin-top: 15px;
-}
-
-header nav input:checked ~ ul{
     display: block;
-}
-
-header nav ul li {
-    text-align: center;
+    margin-top: 15px;
 }
 
 header nav ul li a {
