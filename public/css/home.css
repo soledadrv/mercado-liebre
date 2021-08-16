@@ -1,3 +1,69 @@
 main section.banner {
     display: none;
 }
+
+main h2 {
+    color: var(--grisOscuro);
+    font-size: var(--titulares);
+    margin: 25px auto;
+}
+
+main section article {
+    margin: 10px auto;
+}
+
+main section article div {
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article div div.truck {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+main section article div i {
+    color: var(--verde);
+}
+
+main section article div p {
+    font-size: var(--precios);
+}
+
+main section article div span {
+    color: var(--verde);
+    font-size: var(--descuentos-descripciones);
+}
+
+main section article div h3 {
+    color: var(--grisOscuro);
+    display: none;
+    font-size: var(--descuentos-descripciones);
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+
+
+/* Tablet */
+
+@media (min-width: 361px) {
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article div h3 {
+        display: block;
+    }
+}
+
+
+
+/* Desktop */
+
+/* @media (min-width: 769px) {
+
+} */

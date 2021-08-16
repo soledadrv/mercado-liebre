@@ -28,7 +28,11 @@ header p {
     margin: 10px auto;
 }
 
-header div.menu {
+header nav input{
+    display: none;
+}
+
+header nav label.menu {
     display: block;
     width: 48px;
     margin: auto;
@@ -40,15 +44,43 @@ header div.menu {
     border-radius: 6px;
 }
 
-header div.menu i {
+header nav label.menu i {
     font-size: 26px;
 }
 
 header nav ul {
-    display: block;
+    display: none;
     margin-top: 15px;
+}
+
+header nav input:checked ~ ul{
+    display: block;
 }
 
 header nav ul li a {
     font-size: 14px;
 }
+
+
+
+/* Tablet */
+
+@media (min-width: 361px) {
+
+    header nav label.menu {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+}
+
+
+
+/* Desktop */
+
+/* @media (min-width: 769px) {
+
+} */

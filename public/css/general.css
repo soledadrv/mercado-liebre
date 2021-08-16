@@ -25,6 +25,11 @@ body {
     background-color: var(--grisClaro);
 }
 
+main {
+    margin: auto;
+    width: 90vw;
+}
+
 img {
     width: 100%;
 }
