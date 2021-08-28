@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <title>Mercado Liebre - Home</title>
 </head>
+
 <body>
     <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
-        <div class="search">
-            <form action="">
-                <input type="search" name="buscar" placeholder="Buscar productos, marcas y más...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
+        <div class="top-tablet">
+            <div class="top">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
+                <div class="search">
+                    <form action="GET">
+                        <input type="search" name="buscar" placeholder="Buscar productos, marcas y más...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <nav>
             <label for="menu" class="menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id='menu'>
@@ -31,15 +37,15 @@
                 <li><a href="">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
-            </ul> 
+            </ul>
         </nav>
     </header>
-    
+
     <main>
         <section class="banner">
-            <img src="/images/img-home-banner.jpg" alt="Oferta de Mercado Pago Point">            
+            <img src="/images/img-home-banner.jpg" alt="Oferta de Mercado Pago Point">
         </section>
-        <section>
+        <section class="products">
             <h2>Basado en tu última visita</h2>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
@@ -75,10 +81,10 @@
                     <p>$23.200</p>
                     <span>5% off</span>
                     <h3>SmartTv Samsung 43"</h3>
-                </div>    
+                </div>
             </article>
         </section>
-        <section>
+        <section class="ofertas">
             <h2>Ofertas</h2>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
@@ -114,7 +120,7 @@
                     <p>$23.200</p>
                     <span>5% off</span>
                     <h3>SmartTv Samsung 43"</h3>
-                </div>    
+                </div>
             </article>
         </section>
     </main>
@@ -123,22 +129,25 @@
         <section>
             <div><i class="fas fa-credit-card"></i></div>
             <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
         </section>
         <section>
             <div><i class="fas fa-gift"></i></div>
             <h4>Envío gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
         </section>
         <section>
             <div><i class="fas fa-user-shield"></i></div>
             <h4>Seguridad, de principio a fin</h4>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.</p>
+                porque estás siempre protegid@.</p>
         </section>
         <section class="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
 </body>
+
 </html>

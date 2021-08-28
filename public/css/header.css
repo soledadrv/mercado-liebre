@@ -4,22 +4,53 @@ header {
     padding-bottom: 20px;
 }
 
-header img.logo {
-    width: 40%;
-    margin: 5px 30px;
+header div.top-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px;
+    align-items: center;
 }
 
-header div form input {
-    display: block;
-    width: 45%;
+header div.top {
+    display: flex;
+    align-items: center;
 }
 
-header div form button {
-    display: block;
+header div.top {
+    width: 100%;
+}
+
+header img.logo, header div.search {
+    width: 50%;
 }
 
 header div.search {
-    margin: 5px 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 5px;
+    height: 35px;
+}
+
+header div.top form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header div.search input, header div.search button {
+    background-color: white;
+    border: none;
+    height: 75%;
+}
+
+header div.search input {
+    width: 85%;
+}
+
+header div.search button {
+    width: 15%;
 }
 
 header p {
@@ -33,11 +64,12 @@ header nav input{
 }
 
 header nav label.menu {
-    display: block;
+    display: flex;
     width: 48px;
     margin: auto;
     margin-top: 20px;
     text-align: center;
+    justify-content: center;
     background-color: var(--celeste);
     color: white;
     padding: 10px;
@@ -67,12 +99,29 @@ header nav ul li a {
 
 @media (min-width: 361px) {
 
+    header div.top {
+        padding: 0px;
+        width: 67%;
+    }
+
+    header p {
+        width: 33%;
+    }
+
     header nav label.menu {
         display: none;
     }
 
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     header nav ul {
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
     }
 
 }

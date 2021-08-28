@@ -2,26 +2,45 @@ main section.banner {
     display: none;
 }
 
-main h2 {
+main section.products, main section.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section h2 {
+    display: flex;
+    justify-content: flex-start;
     color: var(--grisOscuro);
     font-size: var(--titulares);
     margin: 25px auto;
+    width: 95%;
 }
 
 main section article {
-    margin: 10px auto;
+    margin: 10px;
+    width: 100%;
+    background-color: white;
 }
 
 main section article div {
     background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    position: relative;
 }
 
 main section article div div.truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
     border: 1px solid var(--verde);
     border-radius: 50%;
-    display: inline-block;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 main section article div i {
@@ -51,8 +70,14 @@ main section article div h3 {
 
 @media (min-width: 361px) {
 
+    main section.banner {
+        display: block;
+    }
+
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+        margin: 10px auto;
     }
 
     main section article div h3 {
@@ -64,6 +89,10 @@ main section article div h3 {
 
 /* Desktop */
 
-/* @media (min-width: 769px) {
+@media (min-width: 769px) {
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%;
+    }
 
-} */
+}
