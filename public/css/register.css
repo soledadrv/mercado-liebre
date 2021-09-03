@@ -1,0 +1,141 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.register h1 {
+    font-size: var(--titulares);
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.register form h2{
+    font-size: 18px;
+}
+
+.register form .input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+
+.register form .input label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.register form .input input {
+    border: none;
+    border-radius: 10px;
+    height: 32px;
+    padding: 0px 5px;
+}
+
+.register form .opciones{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register form .intereses, .register form .tipoUsuario {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.register form .intereses label, .register form .tipoUsuario label {
+    margin-left: 5px;
+}
+
+.register form .intereses input, .register form .tipoUsuario input {
+    width: 16px;
+    height: 16px;
+}
+
+/* BOTONES */
+
+.register form .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.register form .button button{
+    width: 150px;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register form .button .registrarme{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--celeste);
+}
+
+.register form .button .registrarme a{
+    color: white;
+}
+
+.register form .button .cancelar{
+    color: white;
+    background-color: var(--grisOscuro);
+    cursor: pointer;
+}
+
+
+/* TABLET */
+
+@media (min-width: 361px) {
+
+    .register form {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px) {
+
+    .register form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .register form .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    .register form .button .registrarme{
+        color: white;
+        background-color: var(--celeste);
+        font-weight: bold;
+        font-size: 16px;
+        order: 1;
+    }
+
+    .register form .button .cancelar{
+        color: white;
+        background-color: var(--grisOscuro);
+        font-size: 16px;
+    }
+
+}
