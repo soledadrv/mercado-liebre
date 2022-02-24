@@ -17,6 +17,10 @@ footer section div i{
     margin-bottom: 10px;
 }
 
+footer section div i:hover {
+    color: var(--azul);
+}
+
 footer section h4 {
     font-size: var(--descuentos-descripciones);
     color: var(--grisOscuro);
@@ -36,4 +40,25 @@ footer section.copyright p {
     text-align: left;
     padding-left: 10px;
     padding-bottom: 15px;
+}
+
+@media (min-width: 769px) {
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer section {
+        width: 30%;
+        margin: 0px;
+    }
+
+    footer section.copyright {
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
 }

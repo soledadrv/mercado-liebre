@@ -52,6 +52,11 @@
     font-weight: bold;
     font-size: 16px;
     background-color: var(--celeste);
+    cursor: pointer;
+}
+
+.login form .button button:hover {
+    background-color: #0022AA;
 }
 
 .login form .button button a{
